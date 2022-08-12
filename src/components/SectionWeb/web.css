@@ -1,0 +1,14 @@
+.web-carousel {
+    padding: 10px;
+}
+.web-carousel>div{
+    margin: auto;
+}
+.image-normal {
+    height: 36rem;
+}
+.section-web>h2{
+    text-align: left;
+    padding-left: 6.4vw;
+    font-size: 3em;
+}
