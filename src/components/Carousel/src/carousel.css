@@ -19,6 +19,15 @@
     }
 }
 
+/*@media (min-width: 3045px){*/
+/*    .inner{*/
+/*        width: inherit !important;*/
+/*    }*/
+/*    .container-normal {*/
+/*        width: inherit !important;*/
+/*    }*/
+/*}*/
+
 .inner {
     /* important part */
     grid-area: inner-div;
@@ -27,7 +36,6 @@
     position: relative;
     transition-property: all;
     transition-duration: 500ms;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -66,11 +74,18 @@
     object-position: center;
     transition-property: all;
     transition-duration: 300ms;
+    scale: 1.02;
 }
 
 .inner:hover .image {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
+.inner>a{
+    z-index: 10;
+    width: 100%;
+    display: list-item;
+    height: 100%;
+    position: absolute;}
 
 .image-normal {
     height: 20rem
@@ -170,7 +185,6 @@
 .active-render-item {
     display: flex;
     position: absolute;
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -187,14 +201,47 @@
 }
 
 .custom-item {
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
     margin: 0.25rem /* 4px */;
     padding: 0.25rem /* 4px */;
-    background: #ffffffb8;
-    border-radius: 20px;
-    width: 20px;
+    /*background: red;*/
+    /*border-radius: 20px;*/
+    transition: 0.1s ease-in-out;
+    height: 100%;
+    width: 34%;
+}
+
+.custom-item.disabled{
+    display: none;
+}
+
+.custom-item:hover {
+    transition: 0.05s ease-in-out;
+    background: #ffffff63;
+}
+
+.custom-item.right{
+    right: -5px;
+}
+
+.custom-item.left{
+    left: -5px;
+}
+
+@media (max-width: 1024px) {
+    .badge-container {
+        width: 100%!important;
+    }
 }
 
 .badge-container{
+    z-index: 15;
     left: 0;
     border-radius: 0 10px 0 0;
     width: 251px;
@@ -216,7 +263,6 @@
 
 .badge>a:hover{
     color: #2e2bdb;
-    scale: 1.1;
 }
 
 .badge-preview>a>p{

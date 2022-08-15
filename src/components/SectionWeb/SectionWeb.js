@@ -1,10 +1,10 @@
 import {Carousel} from '../Carousel/src'
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
 import './web.css'
-import prodlogistica from './video/prodlogistica.mp4'
-import fruitprod from './video/fruitprod.mp4'
-import cleaning from './video/cleaning.mp4'
-import steamsales from './video/steamsales.mp4'
+import prodlogistica from './video/webm/prodlogistica.mp4'
+import fruitprod from './video/webm/fruitprod.mp4'
+import cleaning from './video/webm/cleaning.mp4'
+import steamsales from './video/webm/steamsales.mp4'
 
 
 // import steamsales from './images/steamsales.gif'

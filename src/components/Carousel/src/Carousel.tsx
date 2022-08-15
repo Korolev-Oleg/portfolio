@@ -87,40 +87,10 @@ export const Carousel = ({
           onDragStart={onDragStarted}
           onDragEnd={onDragEnded}
         >
+          <a href={item.previewLink} target={'_blank'}> </a>
           <video className={'image'} width="100%" loop autoPlay={autoPlay} muted>
-            <source
-                src={item.image}
-                type="video/mp4"
-                className={`image ${
-                    size === 'normal' ? 'image-normal' : 'image-large'
-                }`}
-            />
+            <source src={item.image} type="video/mp4" className={`image ${ size === 'normal' ? 'image-normal' : 'image-large' }`} />
           </video>
-
-          {/*<img*/}
-          {/*  src={item.image}*/}
-          {/*  width="100%"*/}
-          {/*  className={`image ${*/}
-          {/*    size === 'normal' ? 'image-normal' : 'image-large'*/}
-          {/*  }`}*/}
-          {/*/>*/}
-          {item.headerText && (
-            <p
-              className={`header-text ${
-                headerTextType === 'white'
-                  ? 'header-text-white'
-                  : 'header-text-black'
-              }
-               ${
-                 size === 'normal'
-                   ? 'header-text-normal-size'
-                   : ' header-text-large-size'
-               }
-              `}
-            >
-              {item.headerText}
-            </p>
-          )}
             <div className="badge-container">
               {item.githubLink && (
                   <div className={'badge sub-text'}>
@@ -140,40 +110,28 @@ export const Carousel = ({
                   </div>
               )}
             </div>
-          {index === activeItem && (
-            <div className="active-render-item">
+            <>
               {leftItem ? (
                 <div
-                  onClick={() => handleNextSlide(false)}
-                  className="custom-item"
+                    onClick={() => handleNextSlide(false)}
+                    className={"custom-item left" + (activeItem === index ? " disabled" : "")}
                 >
-                  {leftItem}
+                  {/*{leftItem}*/}
                 </div>
               ) : (
-                <span
-                  className="default-item"
-                  onClick={() => handleNextSlide(false)}
-                >
-                  ←
-                </span>
+                <span className="default-item" onClick={() => handleNextSlide(false)} > ← </span>
               )}
               {rightItem ? (
                 <div
-                  onClick={() => handleNextSlide(true)}
-                  className="custom-item"
+                    onClick={() => handleNextSlide(true)}
+                    className={"custom-item right" + (activeItem === index ? " disabled" : "")}
                 >
-                  {rightItem}
+                  {/*{rightItem}*/}
                 </div>
               ) : (
-                <span
-                  className="default-item"
-                  onClick={() => handleNextSlide(true)}
-                >
-                  →
-                </span>
+                <span className="default-item" onClick={() => handleNextSlide(true)} > → </span>
               )}
-            </div>
-          )}
+            </>
         </div>
       ))}
     </div>
