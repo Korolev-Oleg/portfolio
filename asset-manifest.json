@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.33bf6c93.css",
-    "main.js": "/portfolio/static/js/main.86a6a157.js",
+    "main.css": "/portfolio/static/css/main.e234852d.css",
+    "main.js": "/portfolio/static/js/main.8909e159.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/prodlogistica.mp4": "/portfolio/static/media/prodlogistica.13464c87b3b2344177ed.mp4",
-    "static/media/fruitprod.mp4": "/portfolio/static/media/fruitprod.6c4db00c638a4bf707a8.mp4",
-    "static/media/cleaning.mp4": "/portfolio/static/media/cleaning.3a974fee7fc4c7452304.mp4",
-    "static/media/steamsales.mp4": "/portfolio/static/media/steamsales.6b38881ba88f02e4d92f.mp4",
+    "static/media/prodlogistica.webm": "/portfolio/static/media/prodlogistica.13464c87b3b2344177ed.webm",
+    "static/media/fruitprod.webm": "/portfolio/static/media/fruitprod.6c4db00c638a4bf707a8.webm",
+    "static/media/cleaning.webm": "/portfolio/static/media/cleaning.3a974fee7fc4c7452304.webm",
+    "static/media/steamsales.webm": "/portfolio/static/media/steamsales.6b38881ba88f02e4d92f.webm",
+    "static/media/prodlogisticaMobile.png": "/portfolio/static/media/prodlogisticaMobile.1ca7daae8f795cf2d973.png",
+    "static/media/tendmanager.png": "/portfolio/static/media/tendmanager.c4c9085d019ce2eef8ec.png",
+    "static/media/zenMoney.png": "/portfolio/static/media/zenMoney.af7064bec753ded60b21.png",
+    "static/media/priceOfferGenerator.png": "/portfolio/static/media/priceOfferGenerator.46d797852cfacad5bd39.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
-    "main.33bf6c93.css.map": "/portfolio/static/css/main.33bf6c93.css.map",
-    "main.86a6a157.js.map": "/portfolio/static/js/main.86a6a157.js.map",
+    "main.e234852d.css.map": "/portfolio/static/css/main.e234852d.css.map",
+    "main.8909e159.js.map": "/portfolio/static/js/main.8909e159.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33bf6c93.css",
-    "static/js/main.86a6a157.js"
+    "static/css/main.e234852d.css",
+    "static/js/main.8909e159.js"
   ]
 }
