@@ -1,16 +1,13 @@
 import {Carousel} from '../Carousel/src'
 import {FaArrowLeft, FaArrowRight} from 'react-icons/fa'
 import './web.css'
-import prodlogistica from './video/webm/prodlogistica.mp4'
-import fruitprod from './video/webm/fruitprod.mp4'
-import cleaning from './video/webm/cleaning.mp4'
-import steamsales from './video/webm/steamsales.mp4'
+import prodlogistica from './video/webm/prodlogistica.webm'
+import fruitprod from './video/webm/fruitprod.webm'
+import cleaning from './video/webm/cleaning.webm'
+import steamsales from './video/webm/steamsales.webm'
 
 
-// import steamsales from './images/steamsales.gif'
-
-
-const WebCarousel = () => {
+const SectionWeb = () => {
 
   const CarouselData = [
     {
@@ -35,22 +32,24 @@ const WebCarousel = () => {
     },
   ]
   return (
-    <div className="section-web">
-      <h2>Web development</h2>
-      <div className='web-carousel'>
-        <Carousel
-          data={CarouselData}
-          autoPlay={true}
-          rightItem={<FaArrowRight/>}
-          leftItem={<FaArrowLeft/>}
-          animationDuration={3000}
-          headerTextType="black"
-          subTextType="white"
-          size="normal"
-        />
-      </div>
+    <div className={'wrapper'}>
+      <section className="web">
+        <h2 className={'title'}>Web development</h2>
+        <div className='web-carousel'>
+          <Carousel
+            data={CarouselData}
+            autoPlay={true}
+            rightItem={<FaArrowRight/>}
+            leftItem={<FaArrowLeft/>}
+            animationDuration={3000}
+            headerTextType="black"
+            subTextType="white"
+            size="normal"
+          />
+        </div>
+      </section>
     </div>
   )
 }
 
-export default WebCarousel
+export default SectionWeb

@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import WebCarousel from "./components/SectionWeb/SectionWeb";
+import SectionWeb from "./components/SectionWeb/SectionWeb";
+import SectionSoftware from "./components/SectionSoftware/SectionSoftware";
 
 function App() {
   return (
     <div className="App">
-      <div className="wrapper">
-        <WebCarousel />
-      </div>
+      <SectionWeb />
+      <SectionSoftware />
     </div>
   );
 }
