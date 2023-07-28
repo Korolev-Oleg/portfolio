@@ -3,5 +3,5 @@ export type CarouselModel = {
 	previewLink?: string;
 	headerText?: string | null;
 	subText?: string | null;
-	image: string;
+	video: string;
 };

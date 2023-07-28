@@ -89,7 +89,7 @@ export const Carousel = ({
         >
           <a href={item.previewLink} target={'_blank'}> </a>
           <video className={'image'} width="100%" loop autoPlay={autoPlay} muted>
-            <source src={item.image} type="video/webm" className={`image ${ size === 'normal' ? 'image-normal' : 'image-large' }`} />
+            <source src={item.video} type="video/mp4" className={`image ${ size === 'normal' ? 'image-normal' : 'image-large' }`} />
           </video>
             <div className="badge-container">
               {item.githubLink && (
