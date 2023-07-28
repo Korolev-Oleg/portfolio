@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+* {
+  transition: all 0.3s ease;
+}
+
 .wrapper {
   max-width: 95vw;
   margin: 0 auto;
@@ -24,6 +28,7 @@ h2 {
 }
 
 .title {
-    margin: 0;
-    padding: 39px 0;
+  margin: 0;
+  padding: 39px 0;
+  font-size: 5em;
 }

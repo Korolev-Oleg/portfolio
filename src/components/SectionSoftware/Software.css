@@ -16,6 +16,7 @@ section.software{
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     grid-auto-rows: minmax(40vh, auto);
 }
+
 .tile{
     background-color: #ffffff;
     border-radius: 10px;
@@ -24,11 +25,20 @@ section.software{
     overflow: hidden;
     max-height: 40vh;
     position: relative;
+    filter: grayscale(100);
+}
+
+.tile:hover{
+    filter: grayscale(0);
+
 }
 
 .tile>img{
     width: 135%;
     height: auto;
+}
+.tile>img:hover{
+    scale: 1.1;
 }
 
 .tile-title{
