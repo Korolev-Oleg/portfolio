@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.61525a2e.css",
-    "main.js": "/portfolio/static/js/main.a21d5444.js",
+    "main.js": "/portfolio/static/js/main.81ff8fcf.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/prodlogistica.mp4": "/portfolio/static/media/prodlogistica.4b890f700be29aa09d09.mp4",
-    "static/media/fruitprod.mp4": "/portfolio/static/media/fruitprod.1f111e6f2365a525dcef.mp4",
-    "static/media/titanControlBackend.png": "/portfolio/static/media/titanControlBackend.8def3870e81238aaf167.png",
-    "static/media/cleaning.mp4": "/portfolio/static/media/cleaning.d2465430d598626b25cd.mp4",
-    "static/media/steamsales.mp4": "/portfolio/static/media/steamsales.1dff81d7b81b35ebace7.mp4",
+    "static/media/prodlogistica.mp4": "/portfolio/static/media/prodlogistica.20e6816074861fe12a1a.mp4",
+    "static/media/cleaning.mp4": "/portfolio/static/media/cleaning.e7bf8d577afc7bb41844.mp4",
+    "static/media/fruitprod.mp4": "/portfolio/static/media/fruitprod.c9ded5c04203bb34fc5b.mp4",
+    "static/media/titanControlBackend.png": "/portfolio/static/media/titanControlBackend.b2f4e906127c1a8b631e.png",
+    "static/media/steamsales.mp4": "/portfolio/static/media/steamsales.217594baa8180eceb107.mp4",
     "static/media/prodlogisticaMobile.png": "/portfolio/static/media/prodlogisticaMobile.1ca7daae8f795cf2d973.png",
     "static/media/tendmanager.png": "/portfolio/static/media/tendmanager.c4c9085d019ce2eef8ec.png",
     "static/media/zenMoney.png": "/portfolio/static/media/zenMoney.af7064bec753ded60b21.png",
@@ -15,11 +15,11 @@
     "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portfolio/index.html",
     "main.61525a2e.css.map": "/portfolio/static/css/main.61525a2e.css.map",
-    "main.a21d5444.js.map": "/portfolio/static/js/main.a21d5444.js.map",
+    "main.81ff8fcf.js.map": "/portfolio/static/js/main.81ff8fcf.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61525a2e.css",
-    "static/js/main.a21d5444.js"
+    "static/js/main.81ff8fcf.js"
   ]
 }
