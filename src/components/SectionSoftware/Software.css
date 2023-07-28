@@ -26,6 +26,7 @@ section.software{
     max-height: 40vh;
     position: relative;
     filter: grayscale(100);
+    cursor: pointer;
 }
 
 .tile:hover{
@@ -53,5 +54,5 @@ section.software{
     background: #000000b0;
     color: white;
     backdrop-filter: blur(13px);
+    transition: all 0.3s ease;
 }
-

@@ -3,4 +3,5 @@ export type TilesDataType = {
     image: string;
     description: string | null;
     githubLink: string | null;
+    stack: Array<string>;
 }
