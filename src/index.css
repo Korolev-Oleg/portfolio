@@ -32,3 +32,8 @@ h2 {
   padding: 39px 0;
   font-size: 5em;
 }
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3em;
+  }
+}
