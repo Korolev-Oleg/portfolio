@@ -49,4 +49,4 @@ export default [
     githubLink: "",
     stack: ['Python', 'SQL', 'Django', 'Django REST Framework', 'PostgreSQL', 'Redis', 'Docker', 'Git']
   }
-]
+].reverse()

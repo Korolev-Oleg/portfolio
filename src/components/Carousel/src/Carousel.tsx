@@ -34,6 +34,11 @@ export const Carousel = ({
 }: Props) => {
   const [activeItem, setActiveItem] = useState<number>(data.length > 2 ? 1 : 0);
   const [onDragState, setOnDragState] = useState(0);
+  const [isVideoLoaded, setVideoLoaded] = useState(false);
+  const handleVideoLoad = () => {
+  setVideoLoaded(true);
+};
+
 
   useEffect(() => {
     autoPlay &&
@@ -88,7 +93,7 @@ export const Carousel = ({
           onDragEnd={onDragEnded}
         >
           <a href={item.previewLink} target={'_blank'}> </a>
-          <video className={'image'} width="100%" loop autoPlay={autoPlay} muted>
+          <video className={`image ${isVideoLoaded ? 'loaded' : ''}`} onLoadedData={handleVideoLoad} width="100%" loop autoPlay={autoPlay} muted>
             <source src={item.video} type="video/mp4" className={`image ${ size === 'normal' ? 'image-normal' : 'image-large' }`} />
           </video>
             <div className="badge-container">
