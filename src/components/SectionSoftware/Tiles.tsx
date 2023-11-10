@@ -1,5 +1,5 @@
-import React, { Component, MouseEvent } from 'react';
-import { TilesDataType } from './Types';
+import React, {Component, MouseEvent} from 'react';
+import {TilesDataType} from './Types';
 import './Modal.css'
 
 interface TilesProps {
@@ -38,10 +38,16 @@ export default class Tiles extends Component<TilesProps, TilesState> {
     return (
       <div className={'tiles'}>
         {this.props.tilesData.map((tile, index) => (
-          <div className={'tile'} onClick={this.showPopup(tile)} key={index}>
-            <img src={tile.image} alt="" />
-            <div className={'tile-title'}>{tile.title}</div>
-          </div>
+          <>
+            <div>
+              <div className={'tile'} onClick={this.showPopup(tile)} key={index}>
+                <img src={tile.image} alt=""/>
+                <div className={'tile-title'}>
+                  {tile.title}
+                </div>
+              </div>
+            </div>
+          </>
         ))}
 
         {this.state.showModal && (
@@ -49,7 +55,7 @@ export default class Tiles extends Component<TilesProps, TilesState> {
             <div className='modal-content'>
               <span className='close' onClick={this.closePopup}>&times;</span>
               <p>{this.state.activeTile?.title}</p>
-              <img src={this.state.activeTile?.image} alt="" />
+              <img src={this.state.activeTile?.image} alt=""/>
               <p>{this.state.activeTile?.description}</p>
               <ul className={'stack-list'}>
                 {this.state.activeTile?.stack.map((item, index) => (

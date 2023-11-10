@@ -1,6 +1,14 @@
-section.software{
+
+section.software {
     background-color: #000000;
     min-height: 100vh;
+}
+
+.software-title-wrapper {
+    display: flex;
+    position: relative;
+    top: -133px;
+    flex-flow: row-reverse;
 }
 
 .software-title {
@@ -9,6 +17,26 @@ section.software{
     /*margin-bottom: 1rem;*/
     text-align: right;
     padding-right: 6.4vw;
+    width: 662px;
+    background: black;
+    zoom: .5;
+    /*width: 481px;*/
+}
+.scroll-down {
+    width: 73px;
+    background: #1c1c1c;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+.scroll-down>img{
+    width: 80%;
+}
+
+.scroll-down:hover {
+    background: #000000b0;
+    cursor: pointer;
 }
 
 .tiles {
@@ -17,7 +45,7 @@ section.software{
     grid-auto-rows: minmax(40vh, auto);
 }
 
-.tile{
+.tile {
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     margin: 1vw;
@@ -28,20 +56,21 @@ section.software{
     cursor: pointer;
 }
 
-.tile:hover{
+.tile:hover {
     filter: grayscale(0);
 
 }
 
-.tile>img{
+.tile > img {
     width: 135%;
-    height: auto;
+    height: 415px;
 }
-.tile>img:hover{
+
+.tile > img:hover {
     scale: 1.1;
 }
 
-.tile-title{
+.tile-title {
     font-weight: bold;
     font-size: 2vh;
     text-align: center;
@@ -60,7 +89,19 @@ section.software{
     .tiles {
         grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
-    .tile{
+
+    .tile {
         max-width: 80vh;
     }
 }
+
+.badge {
+    width: 70px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    color: white;
+    margin-left: 11px;
+    border-radius: 1px;
+}
+

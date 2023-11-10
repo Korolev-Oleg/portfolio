@@ -45,7 +45,7 @@ export default [
     description: 'Participation in the development of a distributed backend and REST API for TitanControl - a management and control system ' +
       'for railway security services. The application suite includes: ' +
       'a web application for system administration and management, a mobile application for security service employees, ' +
-      'and an application for smartwatches. The system serves up to 5k users simultaneously.',
+      'and an application for smartwatches. The system serves up to 5k users simultaneously https://titancontrol.ru/',
     githubLink: "",
     stack: ['Python', 'SQL', 'Django', 'Django REST Framework', 'PostgreSQL', 'Redis', 'Docker', 'Git']
   }
